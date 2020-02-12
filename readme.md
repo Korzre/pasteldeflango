@@ -2,7 +2,7 @@
 <table border="1">
   <tr>
     <th>
-    ![Screenshot](pasteldeflango1.png)
+      <img src="pasteldeflango1.PNG" alt="My cool logo"/>
     </th>
   </tr>
 </table>
