@@ -1,7 +1,9 @@
 # Pastel de Flango
 <table border="1">
   <tr>
-    <th><img src="pasteldeflango1.png"></th>
+    <th>
+    ![Screenshot](pasteldeflango1.png)
+    </th>
   </tr>
 </table>
 
