@@ -1,5 +1,5 @@
 # Pastel de Flango
-<table border="3">
+<table border="1">
   <tr>
     <th><img src="pasteldeflango1.png"></th>
   </tr>
@@ -7,14 +7,13 @@
 
 ## Flango pastel
 
-
 It is a game alluding to the famous meme "pastel de flango", the game consists of feeding our Asian friend to eat all the chicken pastries that are appearing, as you cannot waste food so you cannot let any pastel fall on the floor.
 
-<b> Tools
+<b> Tools</b>
 * Eclipse.org
 * Paint.NET
 
-<b>Credits
+<b>Credits</b>
 <br>
 1. Song
 
