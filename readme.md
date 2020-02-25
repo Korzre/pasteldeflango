@@ -19,7 +19,8 @@ It is a game alluding to the famous meme "pastel de flango", the game consists o
 <br>
 1. Song
 
-* https://www.youtube.com/watch?v=8OLf-uHHdK4&list=PLmdrfJaSMGKKGC8PBynRa9WggPBDf6Ws5&index=32
+
+* [![Watch the video](https://i.ytimg.com/vi/YrlJum5u4uE/maxresdefault.jpg)](https://www.youtube.com/watch?v=YrlJum5u4uE)
 
 
 The game was made in java.

@@ -2,23 +2,34 @@ package entities;
 
 import java.awt.Graphics;
 import java.awt.Rectangle;
-
-
-
 import graphics.Spritesheet;
 import main.Game;
+import main.Sound;
+
 
 public class Mouth{
 	
 	private int x, y;
 	public boolean right, left;
-	private final double velocity = 2;
+	public static double velocity = 2;
 	public Spritesheet mouth;
 	public int width=70;
 	public int height = 40;
+	
+	public Pastel pastel;
+	
+	private final int subX=1;
+	private final int subY=1;
+	private final int subW=1194;
+	private final int subH=950;
+	
+	private final int origin=-5;
+	private final int toaster = 510;
+	
 	public Mouth(int x, int y) {
 		this.x =x;
 		this.y = y;		
+		pastel = new Pastel(Game.x, Game.y);
 		mouth = new Spritesheet("/OpenMouth.png");
 	}
 	
@@ -29,10 +40,10 @@ public class Mouth{
 			x-=velocity;
 		}
 		
-		if(x+width > 510) {
-			x = 510 - width;
-		}else if (x<0) {
-			x=0;
+		if(x+width > toaster) {
+			x = toaster - width;
+		}else if (x<origin) {
+			x=origin;
 		}
 		
 	}
@@ -45,15 +56,23 @@ public class Mouth{
 		return this.y;
 	}
 	
-	public void render(Graphics g) {
-		g.drawImage(mouth.getSprite(1, 1, 1194, 950), this.getX(),this.getY(),width,height,null);
+	public int getWidth() {
+		return this.width;
 	}
 	
-//	public static boolean isColliding(Entity e1, Entity e2) {
-//		Rectangle e1Mask = new Rectangle(e1.getX() + e1.maskx, e1.getY()+e1.masky, e1.mw,e1.mh);
-//		Rectangle e2Mask = new Rectangle(e2.getX() + e2.maskx, e2.getY()+e2.masky, e2.mw,e2.mh);
-//
-//		return e1Mask.intersects(e2Mask);
-//	}
+	public int getHeight() {
+		return this.height;
+	}
 	
+	public void render(Graphics g) {
+		g.drawImage(mouth.getSprite(subX, subY, subW, subH), this.getX(),this.getY(),this.getWidth(),this.getHeight(),null);
+		//g.fillRect(this.getX()+10, 305, 48,6);
+	}
+	
+	public boolean isColliding() {
+		Rectangle mouthTouch = new Rectangle(this.getX()+10, 305, 48,6);
+		Rectangle pastelTouch = new Rectangle(Pastel.getX(), Pastel.getY(), pastel.getWidth(), pastel.getHeight());
+		return pastelTouch.intersects(mouthTouch);
+		
+	}	
 }
