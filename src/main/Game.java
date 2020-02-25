@@ -62,7 +62,7 @@ public class Game extends Canvas implements Runnable, KeyListener{
 	public final int maxBorder=470;
 	public final int minBorder=50;
 	
-	public static String GameState = "Credits";
+	public static String GameState = "Menu";
 	
 	public final int mouthOrigin =-10;
 	public final int mouthY = 280;

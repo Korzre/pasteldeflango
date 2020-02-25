@@ -11,7 +11,7 @@ import main.Game;
 
 public class Menu {
 
-	public String[] options = {"novo jogo", "creditos", "sair"};
+	public String[] options = {"new game", "credits", "exit"};
 	public int currentOptions = 0;
 	public int maxOptions = options.length -1;
 	public boolean up, down, enter, pause;
@@ -36,12 +36,12 @@ public class Menu {
 		
 		if(enter) {
 			enter = false;
-			if(options[currentOptions] == "novo jogo" || options[currentOptions] == "continuar") {
+			if(options[currentOptions] == "new game" || options[currentOptions] == "continue") {
 				Game.GameState ="GameOn";
 				pause =false;
-			}else if(options[currentOptions] == "sair") {
+			}else if(options[currentOptions] == "exit") {
 				System.exit(1);
-			}else if(options[currentOptions] == "creditos") {
+			}else if(options[currentOptions] == "credits") {
 				Game.GameState = "Credits";
 			}
 		}
@@ -62,18 +62,18 @@ public class Menu {
 		g.setFont(new Font("Arial", Font.BOLD, 28));
 		g.setColor(Color.BLACK);
 		if(pause == false) {
-			g.drawString("Novo jogo", 410, 210);
+			g.drawString("New game", 410, 210);
 		}else{
-			g.drawString("Continuar?", 410, 210);
+			g.drawString("Continue?", 410, 210);
 		}
 		
 		g.setFont(new Font("Arial", Font.BOLD, 28));
 		g.setColor(Color.BLACK);
-		g.drawString("Créditos", 420, 260);
+		g.drawString("Credits", 420, 260);
 		
 		g.setFont(new Font("Arial", Font.BOLD, 28));
 		g.setColor(Color.BLACK);
-		g.drawString("Sair", 445, 310);
+		g.drawString("Exit", 445, 310);
 		
 		g.setFont(new Font("Arial", Font.ITALIC, 12));
 		g.setColor(Color.BLACK);
@@ -83,11 +83,11 @@ public class Menu {
 		g.setColor(Color.ORANGE);
 		g.setFont(Fonts.arrowFont);
 		
-		if(options[currentOptions] == "novo jogo") {
+		if(options[currentOptions] == "new game") {
 			g.drawString(">", 380, 210);
-		}else if(options[currentOptions] == "creditos") {
+		}else if(options[currentOptions] == "credits") {
 			g.drawString(">", 380, 260);
-		}else if(options[currentOptions] == "sair") {
+		}else if(options[currentOptions] == "exit") {
 			g.drawString(">", 380, 310);
 		}
 		
