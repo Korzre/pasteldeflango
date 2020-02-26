@@ -1,9 +1,9 @@
 # Pastel de Flango
-<table border="1">
+<table>
   <tr>
     <th>
       <img src="pastelDeFlangoTeste1.gif" alt="My cool logo"
-      align="center" width="1200" height="900" />
+      align="center" width="1200" height="400" />
     </th>
   </tr>
 </table>
@@ -21,7 +21,7 @@ It is a game alluding to the famous meme "pastel de flango", the game consists o
 1. Song
 
 
-* [![Watch the video](https://i.ytimg.com/vi/YrlJum5u4uE/maxresdefault.jpg)](https://www.youtube.com/watch?v=YrlJum5u4uE)
+* <img src="https://i.ytimg.com/vi/YrlJum5u4uE/maxresdefault.jpg" width="120" height="120" alt="Err" />
 
 
 The game was made in java.
