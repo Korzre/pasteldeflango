@@ -2,7 +2,8 @@
 <table border="1">
   <tr>
     <th>
-      <img src="pasteldeflango1.PNG" alt="My cool logo"/>
+      <img src="pastelDeFlangoTeste1.gif" alt="My cool logo"
+      align="center" width="1200" height="900" />
     </th>
   </tr>
 </table>
