@@ -8,9 +8,9 @@
   </tr>
 </table>
 
-## Flango pastel
+## Overview
 
-It is a game alluding to the famous meme "pastel de flango", the game consists of feeding our Asian friend to eat all the chicken pastries that are appearing, as you cannot waste food so you cannot let any pastel fall on the floor.
+Pasteldeflango is a casual arcade project that blends internet meme culture with classic gaming mechanics. Built from the ground up using Java, the game challenges players' reaction times as they help the main character catch every falling chicken pastry. This project demonstrates core game development principles, such as game loop implementation, collision detection, and state management (menu, gameplay, and credits), all presented with a charming and nostalgic pixel-art aesthetic.
 
 <b> Tools</b>
 * Eclipse.org
