@@ -1,12 +1,12 @@
 # Pastel de Flango
-<table>
-  <tr>
-    <th>
-      <img src="pastelDeFlangoTeste1.gif" alt="My cool logo"
-      align="center" width="1200" height="400" />
-    </th>
-  </tr>
-</table>
+
+  
+    
+<img src="pastelDeFlangoTeste1.gif" alt="My cool logo"
+       />
+    
+  
+
 
 ## Overview
 
